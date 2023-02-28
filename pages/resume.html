@@ -1,0 +1,182 @@
+!DOCTYPE html>
+<html lang ="en" class="sr">
+    <head>
+        <title> Lyn Okoth | Freelance Developer</title>
+        <meta name="keyworkds" content="[username], [name], [skill]" />
+        <meta name="description" content="[Lyn] | Developer" />
+        <link rel="shortcut icon" type="image/png" href="assets/lo-high-resolution-logo-black-on-transparent-background.png" />
+        <body>
+          <header>
+            <div class="wrapper">
+              <div class="logo">
+                <a href="#"><img src="assets/lo-high-resolution-logo-black-on-transparent-background.png"></a>
+              </div>
+            </div>
+            <div class= "navbar">
+              <div class="close-nav"><button>x</button></div>
+              <nav>
+              <a class="active" href="#home">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="pages/projects.html">Projects</a>
+              <a href="#contact">Contact</a>
+              <a href="pages/resume.html">Resume</a>
+              <div id="indicator"></div>
+            </nav>
+            <div class="menu-bar">
+              <button><i></i></button>
+            </div>
+          </header>
+          <div class="container">
+    
+          </div>
+          <script>
+            const theBody = document.querySelector('body');
+            const openNav = document.querySelector('.menu-bar button');
+            const closeNav = document.querySelector('.close-nav button');
+            const Navbar = document.querySelector('.navbar');
+    
+            function showHide(){
+              Navbar.classList.toggle('show');
+            }
+    
+            openNav.onclick = showHide;
+            closeNav.onclick = showHide;
+          </script>
+        <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css">
+    </head>
+    <style>
+      body{
+        background-image: linear-gradient(to top, #bc00ff, #c16dff, #cea4ff, #e2d3ff, #ffffff);
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif; 
+  }
+  .container{
+    display: inline-block;
+  }
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid black;
+    text-shadow: #000;
+    white-space: nowrap;
+    animation: 
+      typing 1s steps(20, end) forwards,
+      blink-caret .75s step-end infinite;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+      from, to {border-color: transparent }
+      50% { border-color: black}
+      
+  }
+  </style>
+  <body>
+          <div class="container">
+          <h1><div class="typed-out">Resume</h1></div>
+                                    
+          </div>
+  </body>
+
+<main class="c6 main">
+
+    <div class="section">
+        <h5 class="subtitle">Education</h5>
+        <h3><a href='https://www.utica.edu/academics/programs/fraud-and-financial-crime-investigation'  target="_blank" rel="noreferrer" class="link utica-link">Utica University, School of Business and Justice Studies</a></h3>
+        <p class="medium">B.S. Fraud and Financial Crime Investigation | December 2020</p>
+        <br>
+        <p><b>Specialization:</b> Financial Investigation <br>
+        <b>Relevant Coursework:</b>Forensic Accounting and Fraud Auditing, Information Privacy, Economic Crime Investigation, Stastistics, Principle of Microeconomics, Principal of Macroeconomics
+        </p>
+    </div>
+
+    <h3><a href='https://www.hvcc.edu/programs/all/stem/computer-information-systems-as.html' class='link-hvcc-link'>Hudson Valley Community College</a></h3>
+    <p class="medium">A.S. Cybersecurity | December 2022</p>
+    
+    <b>Relevant Coursework:</b>Intro to Computer & Info Sci, Programming & Logic I,  Networking I-Intro to Data Communication, Computer and Info Security, Digital Forensics
+</p>
+</main>
+
+<div class="section">
+  <h5 class="subtitle">Certifications</h5>
+  <br>
+  <h3><a href="https://www.credly.com/badges/a6adb680-34d7-43f8-b7ef-454a6c2ce2b2" class="link credly-link">Python for Data Science and AI</a></h3>
+  <b class="medium">Skills Learned:</b>
+  <ul>
+    <li>Bokeh</li>
+    <li>Matplotlib</li>
+    <li>Seaborn</li>
+  </ul>
+
+  <h3><a href='https://coursera.org/share/569c54646b085cc5c52deb0b81477ac4' class=link-credly-link>Introduction to R Programming for Data Science</a></h3>
+  <b class="medium">Skills Learned:</b>
+  <ul>
+    <li>Manipulate primitive data types in the R programming language using RStudio or Jupyter Notebooks.</li>
+    <li>Control program flow with conditions and loops, write functions, perform character string operations, write regular expressions, handle errors. </li>
+    <li>Construct and manipulate R data structures, including vectors, factors, lists, and data frames. </li>
+    <li>Read, write, and save data files and scrape web pages using R. </li>
+  </ul>
+</div>
+
+
+<div class="section">
+  <h5 class="subtitle">Skills</h5>
+  <h3>Techinical</h3>
+  <br>
+  <p>Progressive Web Development(HTML, CSS, JavaScript), React, Node.js, C++, Python, R, C#, Java</p>
+</div>
+
+<div class="section">
+  <h3>Software</h3>
+  <br>
+  <p>Microsoft Office, Netlify, Adobe Photoshop, VS Code, Jupyter Notebook, Kali Linux, Quickbooks</p>
+</div>
+
+<div class="section">
+  <h3>Hobbies</h3>
+  <p>Volleyball, Taekwondo, Video games</p>
+</div>
+<!--Contact Section-->
+<section id="Contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-wrapper load-hidden">
+      <p class="contact-wrapper__text">If you would like me to design your website or you'd just like to say hi, please feel free to contact me on my socials or email me at <a href="mailto:email@example.com">lynokoth79@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+<!-- **** Footer **** -->
+<footer class="footer navbar-static-bottom">
+    <div class="container">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a rel="stylesheet" href="https://twitter.com/lyokoth7" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a rel="stylesheet" href="https://www.linkedin.com/in/lynette-okoth/" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a rel="stylesheet" href="https://github.com/lyokoth" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+      <hr />
+      <p class="footer_text">
+        © 2023 - Template developed by 
+        <a rel="noreferrer" href="https://github.com/lyokoth" target="_blank"
+        >Lynette Okoth</a>
+      </p>
+              </div>
+          </section>
+      </div>
+  </section>
+</html>
